@@ -47,6 +47,8 @@ class SpinCog(commands.Cog):
         self.bot = bot
 
     @app_commands.command(name="spin", description="Spin a wheel to pick a random item")
+    @app_commands.allowed_installs(guilds=True, users=True)
+    @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
     async def spin(self, i: Interaction) -> None:
         await i.response.send_modal(SpinModal())
 
