@@ -23,6 +23,10 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 # Final stage: lean image without uv
 FROM python:3.14-slim-bookworm
 
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends fonts-noto-cjk \
+    && rm -rf /var/lib/apt/lists/*
+
 # Non-root user for security
 RUN groupadd --system --gid 999 botuser \
     && useradd --system --gid 999 --uid 999 --no-create-home botuser \

@@ -9,6 +9,7 @@ dependencies = [
     "discord-py[speed]>=2.7.1",
     "jishaku>=2.6.3",
     "loguru>=0.7.3",
+    "pillow>=13.0.0",
     "pydantic-settings>=2.13.1",
     "python-dotenv>=1.2.2",
 ]
