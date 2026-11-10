@@ -12,8 +12,8 @@ RADIUS = 230
 CENTER = (CANVAS // 2, CANVAS // 2 + 12)
 SUPERSAMPLE = 2
 
-FPS = 24
-SPIN_SECONDS = 4
+FPS = 30
+SPIN_SECONDS = 5
 FINAL_FRAME_MS = 3000
 
 PALETTE = [
@@ -155,7 +155,7 @@ def render_spin(items: list[str], winner: int) -> io.BytesIO:
         append_images=frames[1:],
         duration=durations,
         loop=1,
-        quality=75,
+        quality=80,
     )
     buf.seek(0)
     return buf

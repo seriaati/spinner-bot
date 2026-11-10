@@ -15,7 +15,7 @@ if TYPE_CHECKING:
     from app.core.bot import MyBot
     from app.types import Interaction
 
-# Beyond this, labels become unreadable and the image can exceed Discord's upload limit.
+# Beyond this, slice labels become too small to read.
 MAX_ITEMS = 50
 
 
