@@ -10,7 +10,6 @@ Create a `.env` file:
 
 ```env
 DISCORD_TOKEN=your-bot-token
-ENV=dev
 ```
 
 Then run with Docker:
