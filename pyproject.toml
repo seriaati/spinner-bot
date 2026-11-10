@@ -1,7 +1,7 @@
 [project]
-name = "app-bot"
+name = "spinner-bot"
 version = "0.1.0"
-description = "Add your description here"
+description = "A Discord bot that spins a wheel to pick a random item"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
